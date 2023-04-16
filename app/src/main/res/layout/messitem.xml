@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#292F3F">
+    <TextView
+        android:id="@+id/messTime"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="1 FEB 12:00"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/messContentBot"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_tv"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you intend to transferring money?"
+        />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/subMess"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/border_tv"
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/subMess_name"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:text="Choose Bank name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/subMess_detail"
+            android:lineSpacingExtra="5dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:background="@drawable/border_tv3"
+            android:textColor="@color/black"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="1. MB Bank\n2. VietcomBank\n3. TPBank\n4. VP Bank"/>
+        <TextView
+            android:id="@+id/subMess_request"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otherwise, type or voice..."/>
+    </LinearLayout>
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/imgBot"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/bot"
+        app:riv_corner_radius="50dp"
+        />
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/messContentUser"
+        android:layout_marginRight="25dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:background="@drawable/border_tv2"
+        android:textColor="#ffffff"/>
+
+
+</LinearLayout>
